@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peasant's Day</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/c25cabee86.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="Images/icons8-oak-tree-60.png" type="image/x-icon">
+</head>
+<body>
+<nav class="navbar navbar-expand-sm p-3">
+    <div class="container-fluid">
+      <a class="navbar-brand" href=""><img src="Images/Logo.png" alt="" width="50%"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mynavbar">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item">
+            <a class="nav-link fw-bold" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fw-bold" href="History.html">History</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fw-bold" href="Gallery.html">Gallery</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="text" placeholder="Search">
+          <button class="btn btn-primary" type="button">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+<section>
+    <div class="icon-bar">
+        <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="google"><i class="fab fa-google"></i></a>
+        <a href="#" class="linkedin"><i class="fab fa-linkedin"></i></a>
+        <a href="#" class="youtube"><i class="fab fa-youtube"></i></a>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12 text-center p-5">
+                <h2 class="coming">COMING SOON</h2>
+                <h3 class="p-text">Peasants' Day</h3>
+                <span class="text-primary bg-white m-3 p-3 shadow rounded" id="day"></span>
+                <span class="text-primary bg-white m-3 p-3 shadow rounded" id="hour"></span>
+                <span class="text-primary bg-white m-3 p-3 shadow rounded" id="min"></span>
+                <span class="text-primary bg-white m-3 p-3 shadow rounded" id="sec"></span>
+            </div>
+        </div>
+        <div class="row text-center mx-auto">
+        </div>
+    </div>
+</section>
+<p id="demo"></p>
+
+<script>
+    // Set the date we're counting down to
+    var countDownDate = new Date("Jan 5, 2030 15:37:25").getTime();
+    // Update the count down every 1 second
+    var x = setInterval(function() {
+        // Get today's date and time
+        var now = new Date().getTime();
+        // Find the distance between now and the count down date
+        var distance = countDownDate - now;
+        // Time calculations for days, hours, minutes, and seconds
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        // Display the result in the element with id="demo"
+        document.getElementById("demo").innerHTML = days + " Days " + hours + " Hours " +
+            minutes + " Minutes " + seconds + " Seconds ";
+        //document.getElementById("year").innerHTML=year+"Days";
+document.getElementById("day").innerHTML=days+" Days";
+document.getElementById("hour").innerHTML=hours+" Hr";
+document.getElementById("min").innerHTML=minutes+" Minutes"; document.getElementById("sec").innerHTML=seconds+" Seconds";
+// If the count down is finished, write some text
+        if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("demo").innerHTML = "EXPIRED";
+        }
+    }, 1000);
+    function openForm() {
+    // Implement your logic for opening the form here
+    // For example, display a modal or show a hidden form
+}
+
+function closeForm() {
+    // Implement your logic for closing the form here
+    // For example, hide the modal or reset form fields
+}
+
+var myvar;
+
+function myFunction() {
+    myvar = setTimeout(showPage, 3000);
+}
+
+function showPage() {
+    // Hide the loader and display the main content
+    document.getElementById("loader").style.display = "none";
+    document.getElementById("myDiv").style.display = "block";
+}
+    </script>
+    <footer class="bg-success text-light py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>About Us</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Contact Us</h5>
+                    <p>Myanmar</p>
+                    <p>Email: KOOTORIA2GMAIL.COM</p>
+                    <p>Phone: 09-790790356</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Follow Us</h5>
+                    <ul class="list-inline">
+                        <li class="list-inline-item"><a href="#" class="text-light"><i class="fa-brands fa-facebook"></i></a></li>
+                        <li class="list-inline-item"><a href="#" class="text-light"><i class="fa-brands fa-twitter"></i></a></li>
+                        <li class="list-inline-item"><a href="#" class="text-light"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li class="list-inline-item"><a href="#" class="text-light"><i class="fa-brands fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    </body>
+    </html>
+    

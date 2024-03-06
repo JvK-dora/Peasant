@@ -1,0 +1,229 @@
+body {
+    background-image: url(Images/1.jpg);
+    background-color: #2fa78b;
+}
+nav {
+    background-color: rgba(59, 109, 23, 0.4);
+    backdrop-filter: blur(50px);
+}
+
+.logo {
+    cursor: pointer;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    filter: drop-shadow(4px 4px 8px);
+    -webkit-filter: drop-shadow(4px 4px 8px);
+}
+
+.nav-item:hover {
+    color: rgb(59, 7, 7);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.4)!important;
+}
+.coming {
+    padding-top: 50px;
+    font-family: fantasy;
+    color: rgba(255, 255, 255, 0.8);
+    letter-spacing: 20px;
+    font-size: 50px;
+    text-shadow: 2px 2px 2px rgba(0, 100, 100, 0.4);
+}
+.p-text {
+    background-color: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(50px);
+    padding: 20px;
+    margin: 100px 200px 180px 100px;
+    border-radius: 10px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: rgba(0, 0, 0, 0);
+    letter-spacing: 20px;
+    font-size: 30px;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.icon-bar {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+}
+
+.icon-bar a {
+    display: block;
+    text-align: center;
+    padding: 20px;
+    transition: all 0.3s ease;
+    color: rgba(250, 247, 247, 0.5);
+    font-size: 20px;
+    border-top-right-radius: 30%;
+    border-bottom-right-radius: 30%;
+}
+
+.icon-bar a:hover {
+    background-color: #385998;
+    color: white;
+    backdrop-filter: blur(30px);
+    font-size: 30px;
+    padding: 30px;
+    transform: rotateX(30deg);
+    transition: 0.3s ease;
+}
+
+.twitter {
+    background-color: #55ACEE;
+    color: white;
+}
+
+.twitter:hover {
+    padding: 30px;
+    transform: rotateX(30deg);
+    transition: 0.3s ease;
+}
+/* Google */
+.google {
+    background-color: #004039;
+    color: white;
+}
+
+.google:hover {
+    padding: 30px;
+    transform: rotateX(30deg);
+    transition: 3s ease;
+}
+
+/* LinkedIn */
+.linkedin {
+    background-color: #087605;
+    color: white;
+}
+
+.linkedin:hover {
+    padding: 30px;
+    transform: rotateX(30deg);
+    transition: 3s ease;
+}
+
+/* YouTube */
+.youtube {
+    background-color: #ff0000;
+    color: white;
+}
+
+.youtube:hover {
+    padding: 30px;
+    transform: rotateX(30deg);
+    transition: 3s ease;
+}
+
+/* Chat Button */
+.open-button {
+    background-color: #555;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    position: fixed;
+    bottom: 23px;
+    right: 28px;
+    width: 288px;
+}
+
+.fa-rocketchat {
+    font-size: 50px !important;
+    color: #374082;
+    cursor: pointer;
+    position: fixed;
+    bottom: 23px;
+    right: 20px;
+}
+/* Chat Button Hover */
+.fa-rocketchat:hover {
+    color: #0075b5;
+    transition: 0.25s ease-in;
+    font-size: 55px;
+}
+
+/* Chat Popup */
+.chat-popup {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    border: 3px solid;
+    z-index: 9;
+}
+
+/* Form Container */
+.form-container {
+    max-width: 300px;
+    padding: 10px;
+    background-color: white;
+}
+
+.form-container textarea {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 22px 0;
+    border: none;
+    background: #f1f1f1;
+    resize: none;
+    min-height: 300px;
+}
+
+.form-container textarea:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+.form-container .btn {
+    background-color: #4AAd;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 10px;
+    opacity: 0.0;
+}
+
+.form-container .btn:hover {
+    opacity: 1;
+}
+
+/* Open Button Hover */
+.open-button:hover {
+    color: blue;
+}
+/* Mobile Responsive */
+@media screen and (max-width: 700px) {
+    /* .coming */
+    .coming {
+        padding-top: 50px;
+        font-family: fantasy;
+        color: rgba(255, 255, 255, 0.8);
+        letter-spacing: 20px;
+        line-height: 40px;
+        font-size: 18px;
+        text-shadow: 2px 2px 2px rgba(0, 100, 100, 0.4);
+    }
+
+    /* .p-text */
+    .p-text {
+        background-color: rgba(100, 100, 100, 0.4);
+        backdrop-filter: blur(50px);
+        padding: 20px;
+        margin: 10px 20px;
+        border-radius: 18px;
+        font-family: fantasy;
+        color: rgba(255, 255, 255, 0.8);
+        letter-spacing: 20px;
+        line-height: 40px;
+        font-size: 20px;
+        text-shadow: 2px 2px 2px rgba(0, 100, 100, 0.5);
+    }
+}
+footer {
+    background-color: #29521c; /* Replace with your desired color code */
+    color: #fff; /* Optional: Set text color to white for better contrast */
+    padding: 20px; /* Optional: Add padding for better spacing */
+}
